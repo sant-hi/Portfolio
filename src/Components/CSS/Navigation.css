@@ -1,0 +1,91 @@
+.custom-navbar{
+    background:rgba(10,10,10,.25);
+    backdrop-filter:blur(15px);
+    transition:.4s;
+    padding:15px 0;
+}
+
+.custom-navbar.scrolled{
+    background:#0b0b0b;
+    box-shadow:0 5px 20px rgba(0,0,0,.35);
+}
+
+/* Logo */
+
+.logo{
+    color:#fff !important;
+    font-size:28px;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+.logo span{
+    color:#fff;
+    border:1px solid #555;
+    border-radius:50%;
+    padding:4px 12px;
+    margin-right:8px;
+}
+
+/* Nav Links */
+
+.custom-navbar .nav-link{
+    color:#bdbdbd !important;
+    margin:0 14px;
+    font-size:16px;
+    font-weight:500;
+    transition:.3s;
+    position:relative;
+}
+
+.custom-navbar .nav-link:hover{
+    color:#fff !important;
+}
+
+/* Underline Animation */
+
+.custom-navbar .nav-link::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    width:0%;
+    height:2px;
+    background:#fff;
+    transition:.3s;
+}
+
+.custom-navbar .nav-link:hover::after{
+    width:100%;
+}
+
+/* Resume Button */
+
+.resume-btn-nav{
+    border:1px solid #666 !important;
+    color:#fff !important;
+    transition:.3s;
+}
+
+.resume-btn-nav:hover{
+    background:#fff !important;
+    color:#111 !important;
+}
+
+/* Mobile */
+
+@media(max-width:992px){
+
+.custom-navbar{
+    background:#0b0b0b;
+}
+
+.custom-navbar .nav-link{
+    margin:10px 0;
+}
+
+.resume-btn-nav{
+    margin-top:15px;
+}
+
+}

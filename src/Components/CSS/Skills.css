@@ -1,0 +1,58 @@
+.skills-section{
+    background:#0b0b0b;
+    color:#fff;
+    padding:80px 0;
+}
+
+.section-tag{
+    color:#8f8f8f;
+    letter-spacing:5px;
+    text-transform:uppercase;
+    font-size:14px;
+}
+
+.section-title{
+    font-size:3rem;
+    font-weight:700;
+    margin:15px 0;
+}
+
+.section-description{
+    color:#bdbdbd;
+    max-width:650px;
+    margin:auto;
+    line-height:1.8;
+}
+
+/* Skill Box */
+
+.skill-box{
+    background:#151515;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:15px;
+    text-align:center;
+    padding:22px;
+    font-size:18px;
+    font-weight:500;
+    transition:.3s;
+    cursor:pointer;
+}
+
+.skill-box:hover{
+    background:#202020;
+    transform:translateY(-8px);
+    border-color:#555;
+}
+
+@media(max-width:768px){
+
+.section-title{
+    font-size:2.3rem;
+}
+
+.skill-box{
+    font-size:16px;
+    padding:18px;
+}
+
+}

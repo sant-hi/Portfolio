@@ -1,0 +1,141 @@
+.about-section{
+    background:#0b0b0b;
+    color:#fff;
+    padding:20px 0;
+}
+
+/* Left */
+
+.profile-wrapper{
+    position:relative;
+    display:inline-block;
+}
+
+.profile-circle{
+    position:absolute;
+    width:500px;
+    height:500px;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:50%;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+.profile-image{
+    width:400px;
+    height:400px;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid #161616;
+    box-shadow:0 25px 60px rgba(0,0,0,.5);
+    transition:.5s;
+}
+
+.profile-image:hover{
+    transform:scale(1.04);
+}
+
+/* Right */
+
+.about-tag{
+    display:inline-block;
+    color:#9d9d9d;
+    letter-spacing:4px;
+    font-size:13px;
+    margin-bottom:20px;
+    text-transform:uppercase;
+}
+
+.about-title{
+    font-size:3.2rem;
+    line-height:1.2;
+    font-weight:700;
+    margin-bottom:30px;
+    max-width:700px;
+}
+
+.about-description{
+    color:#b8b8b8;
+    line-height:2;
+    font-size:17px;
+    margin-bottom:20px;
+}
+
+/* Details */
+
+.about-details{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+    margin-top:40px;
+}
+
+.about-details span{
+    color:#777;
+    font-size:13px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+
+.about-details h6{
+    margin-top:8px;
+    font-size:18px;
+    font-weight:500;
+}
+
+/* Button */
+
+.resume-btn{
+    margin-top:45px;
+    background:transparent;
+    color:#fff;
+    border:1px solid #444;
+    padding:14px 36px;
+    border-radius:40px;
+    transition:.35s;
+    font-weight:600;
+    letter-spacing:1px;
+}
+
+.resume-btn:hover{
+    background:#fff;
+    color:#111;
+    transform:translateY(-4px);
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.about-title{
+    font-size:2.5rem;
+}
+
+.profile-image{
+    width:260px;
+    height:260px;
+}
+
+.profile-circle{
+    width:300px;
+    height:300px;
+}
+
+.about-details{
+    grid-template-columns:1fr;
+}
+
+}
+
+@media(max-width:576px){
+
+.about-title{
+    font-size:2rem;
+}
+
+.about-description{
+    font-size:16px;
+}
+
+}
