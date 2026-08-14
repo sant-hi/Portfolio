@@ -3,7 +3,6 @@ import image from "../assets/Images/banner_new.png";
 import "./CSS/Banner.css";
 
 function Banner() {
-  const name = "Santhi Priya";
   const role = "Python Full Stack Developer";
 
   return (
