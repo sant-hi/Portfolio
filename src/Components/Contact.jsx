@@ -1,6 +1,47 @@
 import React from "react";
 import "../Components/CSS/Contact.css"
+import { sendContactMessage } from "../services/api";
+import { useState } from "react";
 function Contact() {
+
+  const [formData, setFormData] = useState({
+  name: "",
+  email: "",
+  subject: "",
+  message: ""
+});
+
+const handleChange = (e) => {
+  setFormData({
+    ...formData,
+    [e.target.name]: e.target.value
+  });
+};
+
+const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  try {
+    await sendContactMessage(formData);
+
+    alert("Message sent successfully!");
+
+    setFormData({
+      name: "",
+      email: "",
+      subject: "",
+      message: ""
+    });
+
+  } catch (error) {
+    console.error(error);
+    alert("Failed to send message.");
+  }
+};
+
+
+
+
   return (
     <section id="contact" className="py-5"
       style={{ backgroundColor: "#0b0b0b", color: "#fff" }}
@@ -73,47 +114,66 @@ function Contact() {
             >
               <div className="card-body p-4">
 
-                <form>
+                <form onSubmit={handleSubmit}>
 
                   <div className="row">
 
                     <div className="col-md-6 mb-3">
                       <input
-                        type="text"
-                        className="form-control bg-black text-light border-secondary"
-                        placeholder="Your Name"
-                      />
+  type="text"
+  name="name"
+  value={formData.name}
+  onChange={handleChange}
+  className="form-control bg-black text-light border-secondary"
+  placeholder="Your Name"
+  required
+/>
                     </div>
 
                     <div className="col-md-6 mb-3">
                       <input
-                        type="email"
-                        className="form-control bg-black text-light border-secondary"
-                        placeholder="Email Address"
-                      />
+  type="email"
+  name="email"
+  value={formData.email}
+  onChange={handleChange}
+  className="form-control bg-black text-light border-secondary"
+  placeholder="Email Address"
+  required
+/>
                     </div>
 
                   </div>
 
                   <div className="mb-3">
                     <input
-                      type="text"
-                      className="form-control bg-black text-light border-secondary"
-                      placeholder="Subject"
-                    />
+  type="text"
+  name="subject"
+  value={formData.subject}
+  onChange={handleChange}
+  className="form-control bg-black text-light border-secondary"
+  placeholder="Subject"
+  required
+/>
                   </div>
 
                   <div className="mb-4">
                     <textarea
-                      rows="6"
-                      className="form-control bg-black text-light border-secondary"
-                      placeholder="Write your message..."
-                    ></textarea>
+  name="message"
+  value={formData.message}
+  onChange={handleChange}
+  rows="6"
+  className="form-control bg-black text-light border-secondary"
+  placeholder="Write your message..."
+  required
+></textarea>
                   </div>
 
-                  <button className="btn btn-light px-4 py-2 fw-semibold">
-                    Send Message
-                  </button>
+                  <button
+  type="submit"
+  className="btn btn-light px-4 py-2 fw-semibold"
+>
+  Send Message
+</button>
 
                 </form>
 
