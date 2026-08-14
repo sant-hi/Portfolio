@@ -1,6 +1,6 @@
 import React from "react";
 import "../Components/CSS/Contact.css"
-import { sendContactMessage } from "../services/api";
+import { sendContactMessage } from "../Services/api";
 import { useState } from "react";
 function Contact() {
 
