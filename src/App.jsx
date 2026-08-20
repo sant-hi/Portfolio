@@ -43,37 +43,36 @@ function App() {
 
   // Projects
   const projects = [
-    {
-      id: 1,
-      title: "Intelligent Traffic Management System",
-      image: traffic,
-      tech: ["Python", "Flask", "OpenCV", "YOLO"],
-      description:
-        "Density-based traffic signal control system using computer vision for intelligent traffic management.",
-      github: "https://github.com/yourusername/traffic-management",
-      demo: "#",
-    },
-    {
-      id: 2,
-      title: "Job Portal",
-      image: job,
-      tech: ["Django", "MySQL", "Bootstrap"],
-      description:
-        "A recruitment platform connecting recruiters and candidates with job applications and profile management.",
-      github: "https://github.com/yourusername/job-portal",
-      demo: "#",
-    },
-    {
-      id: 3,
-      title: "E-Commerce Website",
-      image: ecommerce,
-      tech: ["React", "Bootstrap", "JavaScript"],
-      description:
-        "Responsive shopping website with product browsing, cart management, and secure checkout flow.",
-      github: "https://github.com/yourusername/ecommerce",
-      demo: "#",
-    },
-  ];
+  {
+    title: "Recruitment and Applicant Tracking System",
+    image: job,
+    description:
+      "A web-based recruitment and applicant tracking system for managing job postings, applications, candidates, and interviews.",
+    tech: ["Python", "Django", "HTML", "CSS", "JavaScript", "MySQL"],
+    github: "https://github.com/sant-hi/Recruitment-and-Applicant-Management-System",
+    liveDemo: "YOUR_RECRUITMENT_LIVE_DEMO_LINK"
+  },
+
+  {
+    title: "Personal Portfolio",
+    image: portfolio,
+    description:
+      "A responsive personal portfolio website showcasing my skills, projects, experience, and contact information.",
+    tech: ["React", "JavaScript", "HTML", "CSS", "Bootstrap","Django"],
+    github: "https://github.com/sant-hi/Portfolio",
+    liveDemo: "YOUR_PORTFOLIO_LIVE_DEMO_LINK"
+  },
+
+  {
+    title: "E-Commerce Website",
+    image: ecommerce,
+    description:
+      "An e-commerce website with product management, shopping cart, checkout, and payment functionality.",
+    tech: ["Python", "Django", "HTML", "CSS", "JavaScript", "MySQL"],
+    github: "YOUR_ECOMMERCE_GITHUB_LINK",
+    liveDemo: "YOUR_ECOMMERCE_LIVE_DEMO_LINK"
+  }
+];
 
   return (
     <>
