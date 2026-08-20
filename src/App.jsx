@@ -11,7 +11,7 @@ import Contact from "./Components/Contact";
 import My_Footer from "./Components/My_Footer";
 
 // Project Images
-import traffic from "./assets/Images/traffic.jpeg";
+import portfolio from "./assets/Images/portfolio.avif";
 import job from "./assets/Images/job.jpeg";
 import ecommerce from "./assets/Images/ecommerce.jpeg";
 
