@@ -36,13 +36,23 @@ function Projects({projects}) {
 </div>
                     
                   <div className="mt-4">
-                    <button className="btn project-btn me-2">
-                      GitHub
-                    </button>
+                    <a
+  href={i.github}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="btn project-btn me-2"
+>
+  GitHub
+</a>
 
-                    <button className="btn project-btn">
-                      Live Demo
-                    </button>
+                    <a
+  href={i.liveDemo}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="btn project-btn"
+>
+  Live Demo
+</a>
                   </div>
 
                 </div>
